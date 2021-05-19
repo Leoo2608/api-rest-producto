@@ -21,7 +21,7 @@ public class ProductoService {
 		return prorep.findById(id).get();
 	}
 	public Producto update(Producto prod) {
-		return prorep.save(null);
+		return prorep.save(prod);
 	}
 	public void delete(Long id) {
 		prorep.deleteById(id);
